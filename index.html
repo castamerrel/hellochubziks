@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Hello, world!</title>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul class="nav_list">
+                <li class="nav_el">
+                    <a href="#top" class="nav_link">О нас</a>
+                </li>
+                <li class="nav_el">
+                    <a href="#skillslink" class ="nav_link">Скиллы</a>
+                </li>
+                <li class="nav_el">
+                    <a href="#contactlink" class="nav_link">Контакты</a>
+                </li>
+            </ul>   
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <section class="about-us">
+                <h1 class="about-us_title">Hello, world!</h1>
+                <p class="about-us_text">Привет! Мы - Ира и Вадим, и сейчас мы в Турции, нам очень нужны деньги на то, чтобы кушать вкусный турецкий хлебный мякиш и финики, и поэтому представляем вам: услуги веб-макак :)</p>
+                <img src="img/Component 2.png" class="about-us_photo">
+                <a class="btn btn-contacts" href="#contactlink">Написать</a>
+            </section>
+    
+            <section class="skills" id="skillslink">
+                <div class="skills_wrapper">
+                    <h1 class="skills_title">Our skills</h1>
+                    <div class="skills_about">
+                        <p class="skills_benefits heart">Хочешь лендинг, сложный сайт или телеграмм-бота? Мы поможем!</p>
+                        <p class="skills_benefits star">Готовы работать джунами, питонистами и фронтендерами, а также учиться чему-то новому.</p>
+                    </div>
+                </div>
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <a data-id="front" class="tab active btn">Фронтенд</a>
+                        <a data-id="back" class="tab btn">Бэк-енд</a>
+                        <a data-id="python" class="tab btn">Python</a>
+                    </div>
+    
+                    <div class="content">
+                        <div id="front" data-tab="1" class="tabcontent active">
+                            <h2 class="visually-hidden">Фронтенд</h2>
+                            <img src="">
+                            <p class="tab_text">Ира делает адаптивную верстку на чистом html/css, а также может добавить любой JS-функционал.</p>
+                        </div>
+                        <div id="back" data-tab="2" class="tabcontent visually-hidden">
+                            <h2 class="visually-hidden">Бэк-енд</h2>
+                            <img src="">
+                            <p class="tab_text">Вадим настраивает сервера и пишет логику сайтов и баз данных, поэтому верстка, написанная Ирой, обязательно будет доступна каждому желающему в интернете.</p>
+                        </div>
+                        <div id="python" data-tab="3" class="tabcontent visually-hidden">
+                            <h2 class="visually-hidden">Python</h2>
+                            <img src="">
+                            <p class="tab_text">Вместе мы можем написать телеграмм-бота на Pyton. Он будет выполнять любые задуманные вами функции и радовать случайного прохожего прекрасной логикой!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="contacts">
+                <a name="contactlink"></a>
+                <h1>Contacts</h1>
+                <p class="contacts-text">Ну классное же предложение, правда?<br>
+                Так давай, напиши нам:</p>
+                <div class="contacts_links">
+                    <ul class="contacts_list">
+                        <li class="contacts_el">
+                            <a><img src="img/tg.png" width="181" height="178"></a>
+                            <p>В тг-боте<br>
+                                (сами сделали!)</p>
+                        </li>
+                        <li class="contacts_el">
+                            <a href="mailto:psinahoi@gmail.com"><img src="img/gmail.png" width="190" height="190"></a>
+                            <p>На почту<br>
+                                (православно)</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

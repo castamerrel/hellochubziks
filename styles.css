@@ -68,10 +68,17 @@ h1 {
     }
 }
 
-@media (max-width:480px) {
+@media (max-width:570px) {
     h1 {
         font-size: 90px;
         line-height: 68px;
+    }
+}
+
+@media (max-width: 345px) {
+    h1 {
+        font-size: 50px;
+        line-height: 40px;
     }
 }
 
@@ -115,7 +122,7 @@ h1 {
 
 @media (max-width:480px) {
     .main-nav {
-        max-width: 380px;
+        
     }
 }
 
@@ -128,12 +135,12 @@ h1 {
 }
 
 .nav_el {
-    margin-right: 100px;
+    margin: 0 50px;
 }
 
 @media (max-width:992px) {
     .nav_el {
-        margin-right: 50px;
+        margin: 0 25px;
     }
 }
 
@@ -182,6 +189,18 @@ h1 {
     margin-bottom: 120px;
     padding-top: 28px;
     position: relative;
+}
+
+@media (max-width: 480px) {
+    .about-us {
+        padding-bottom: 220px;
+    }
+}
+
+@media (max-width: 321px) {
+    .about-us {
+        padding-bottom: 200px;
+    }
 }
 
 .about-us_title {
@@ -270,6 +289,8 @@ h1 {
     height: 645px;
 
     border-bottom-right-radius: 60px;
+
+    z-index: 0;
 }
 
 @media (max-width: 992px) {
@@ -281,12 +302,22 @@ h1 {
 
 @media (max-width: 480px) {
     .about-us img {
-        position:static;
-        width: 376px;
+        position:absolute;
+        width: 356px;
         height: 292px;
+
+        right: 0;
+        bottom: 0;
 
         margin-top: -60px;
         margin-left: -30px;
+    }
+}
+
+@media (max-width: 321px) {
+    .about-us img {
+        width: 300px;
+        height: 241px;
     }
 }
 
@@ -366,20 +397,38 @@ h1 {
     }
 }
 
+@media (max-width: 570px) {
+    .skills_title::after {
+        right: 50px;
+        bottom: 50px;
+    }
+}
+
 @media (max-width:480px) {
     .skills_title::after {
+        display: none;
+    }
+
+    .skills_wrapper {
+        position: relative;
+    }
+
+    .skills_wrapper::after {
         content: "";
+        position: absolute;
         background-image: url('img/arrow element.png');
         width: 72px;
         height: 225px;
         background-size: cover;
         transform: rotate(360deg);
 
-        top: 180px;
-        left: 70px;
+        bottom: 0px;
+        left: 40%;
 
+        z-index: -1;
     }
 }
+
 
 .skills_about {
     margin: 5px 0px 0px 0px;
@@ -416,6 +465,19 @@ h1 {
 
         font-size: 14px;
         line-height: 17px;
+    }
+}
+
+@media (max-width: 321px) {
+    .skills_wrapper::after {
+        width: 32px;
+        height: 115px;
+
+        bottom: 60px;
+    }
+
+    .skills_about {
+        margin-bottom: 0px;
     }
 }
 
@@ -610,10 +672,28 @@ h1 {
 
     display: flex;
     justify-content: center;
+
+    padding-left: 0;
 }
 
 .contacts_el {
     padding: 30px 60px 30px 60px; 
+}
+
+.contacts_el a {
+    text-decoration: none;
+    color:#434131;
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts_el img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 992px) {
@@ -625,7 +705,35 @@ h1 {
         width: 120px;
         height: 120px;
     }
+
+    .contacts_el a {
+        font-size: 12px;
+    }
 }
+
+@media (max-width: 480px) {
+    .contacts_list {
+        padding-left: 0;
+    }
+    
+    .contacts_el {
+        padding: 10px 15px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .contacts_el img {
+        width: 60px;
+        height: 60px;
+
+        margin-bottom: 10px;
+    }
+
+    .contacts_el a {
+        font-size: 8px;
+    }
+}
+
 
 .contacts_el:hover {
     background-color: #B5BFEB;
@@ -637,4 +745,6 @@ h1 {
 footer {
     background-color: #434131;
     padding-bottom: 60px;
+
+    margin-bottom: 0;
 }

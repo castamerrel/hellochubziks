@@ -25,10 +25,10 @@
                     <a href="#top" class="nav_link">О нас</a>
                 </li>
                 <li class="nav_el">
-                    <a href="#skillslink" class ="nav_link">Скиллы</a>
+                    <a href="#skills" class ="nav_link">Скиллы</a>
                 </li>
                 <li class="nav_el">
-                    <a href="#contactlink" class="nav_link">Контакты</a>
+                    <a href="#contacts" class="nav_link">Контакты</a>
                 </li>
             </ul>   
         </nav>
@@ -38,12 +38,14 @@
         <div class="wrapper">
             <section class="about-us">
                 <h1 class="about-us_title">Hello, world!</h1>
-                <p class="about-us_text">Привет! Мы - Ира и Вадим, и сейчас мы в Турции, нам очень нужны деньги на то, чтобы кушать вкусный турецкий хлебный мякиш и финики, и поэтому представляем вам: услуги веб-чубзиков :)</p>
-                <img src="img/Component 2.png" class="about-us_photo">
+                <p class="about-us_text">Привет! Мы - Ира и Вадим, и сейчас мы в Турции, нам очень нужны деньги на то, чтобы кушать турецкий хлебный мякиш и финики, и поэтому представляем вам: услуги веб-чубзиков :)<br>
+                    Если ты хочешь сайт или бота в телеграме, кликай на кнопку.
+                </p>
+                <img src="img/Component 2.png" class="about-us_photo" width="576" height="428">
                 <a class="btn btn-contacts" href="#contactlink">Написать</a>
             </section>
     
-            <section class="skills" id="skillslink">
+            <section class="skills" id="skills">
                 <div class="skills_wrapper">
                     <h1 class="skills_title">Our skills</h1>
                     <div class="skills_about">
@@ -61,25 +63,24 @@
                     <div class="content">
                         <div id="front" data-tab="1" class="tabcontent active">
                             <h2 class="visually-hidden">Фронтенд</h2>
-                            <img src="">
-                            <p class="tab_text">Ира делает адаптивную верстку на чистом html/css, а также может добавить любой JS-функционал.</p>
+                            <p class="tab_text">Ира делает адаптивно-резиновую верстку на чистом html/css с подходами mobile/desktop-first, а также может добавить любой JS-функционал.</p>
+                            <img src="img/front.jpg">
                         </div>
                         <div id="back" data-tab="2" class="tabcontent visually-hidden">
                             <h2 class="visually-hidden">Бэк-енд</h2>
-                            <img src="">
-                            <p class="tab_text">Вадим настраивает сервера и пишет логику сайтов и баз данных, поэтому верстка, написанная Ирой, обязательно будет доступна каждому желающему в интернете.</p>
+                            <p class="tab_text">Вадим настраивает сервера с помощью фреймворков Django и Flask, пишет логику сайтов и баз данных (SQL), поэтому верстка, написанная Ирой, обязательно будет доступна каждому желающему в интернете.</p>
+                            <img src="img/tele-bot.png">
                         </div>
                         <div id="python" data-tab="3" class="tabcontent visually-hidden">
                             <h2 class="visually-hidden">Python</h2>
-                            <img src="">
                             <p class="tab_text">Вместе мы можем написать телеграмм-бота на Pyton. Он будет выполнять любые задуманные вами функции и радовать случайного прохожего прекрасной логикой!</p>
+                            <img src="img/tele-bot-2.png">
                         </div>
                     </div>
                 </div>
             </section>
     
-            <section class="contacts">
-                <a name="contactlink"></a>
+            <section class="contacts" id="contacts">
                 <h1>Contacts</h1>
                 <p class="contacts-text">Ну классное же предложение, правда?<br>
                 Так давай, напиши нам:</p>
@@ -95,11 +96,37 @@
                         </li>
                     </ul>
                 </div>
+
+                <p class="crypto_text">Ну а если работы для нас нет, но помочь хочется, то вот наши крипто-кошельки для великодушных донатов:</p>
+                <div class="contacts_crypto">
+                    <ul>
+                        <li class="crypto_el">
+                            <span>Bitcoin</span>
+                            <input id="bitcoin" type="text" value="3PkcpitZQxwSGoNoBXzGHhRKExThkWBLMe" class=" inputText">
+                            <button data-id="bitcoin" class="copyText crypto-btn bitcoin-btn ">Bitcoin</button>
+                            
+                        </li>
+                        <li class="crypto_el">
+                            <span>Dogecoin</span>
+                            <input id="dogecoin" type="text" value="DQPMBZXSYu4JAixrXmSzNz6P8bs1wJ9vnm" class="inputText">
+                            <button data-id="dogecoin" class="copyText crypto-btn dogecoin-btn">Dogecoin</button>
+                            
+                        </li>
+                        <li class="crypto_el">
+                            <span>Ethereum</span>
+                            <input id="ethereum" type="text" value="0x8DFc9DC790bfB835d090d72F41A0FCE6CFE9842B" class="inputText">
+                            <button data-id="ethereum" class="copyText crypto-btn ethereum-btn">Ethereum</button>
+                            
+                        </li>
+                    </ul>
+                </div>
             </section>
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p class="visually-hidden">че зыришь, глаза пузыришь? не знаем мы, че в подвале этом написать</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 </html>

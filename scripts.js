@@ -9,9 +9,6 @@ tabs.forEach(function(el) {
     el.addEventListener('click', activateTab);
 });
 
-cryptoBtns.forEach(function(el) {
-    el.addEventListener('click', copyCrypto);
-});
 
 function activateTab(el) {
     const id = el.target.dataset.id;
@@ -31,27 +28,30 @@ function activateTab(el) {
     }
 }
 
+cryptoBtns.forEach(function(el) {
+    el.addEventListener('click', copyCrypto);
+});
+
 function copyCrypto(el) {
     const id = el.target.dataset.id;
 
     cryptoTexts.forEach(cryptoText => {
         if (cryptoText.id == id) {
-
-            cryptoText.select();
-            document.execCommand('copy');
-            showAlert();
             cryptoTexts.forEach(cryptoText => {
                 cryptoText.classList.remove('active');
             });
             cryptoText.classList.add('active');
+            cryptoText.select();
+            document.execCommand('copy');
+            showAlert();
         };
     });
 }
 
 function showAlert() {
-    cryptoAlert.classList.add("active");
+    cryptoAlert.classList.add("active-al");
     window.getSelection().removeAllRanges();
     setTimeout(function(){
-        cryptoAlert.classList.remove("active");
+        cryptoAlert.classList.remove("active-al");
     }, 700);
 }

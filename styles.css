@@ -785,9 +785,10 @@ h1 {
     bottom: -55px;
 }
 
-.contacts_crypto.active ul::after {
+.contacts_crypto.active-al ul::after {
     display: block;
 }
+
 
 .crypto_el {
     margin: 20px;

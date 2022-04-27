@@ -769,7 +769,7 @@ h1 {
 }
 
 .contacts_crypto ul::after {
-    content: 'Скопировано!';
+    content: 'Copied!';
     position: absolute;
     display: none;
 
